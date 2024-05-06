@@ -1,0 +1,17 @@
+# 他のneonファイルの設定を現在の設定を読み込む
+# 今回だと、Larastanが用意しているLaravelに特化した設定ファイルを指定している
+includes:
+  - ./vendor/nunomaduro/larastan/extension.neon
+
+parameters:
+    # どのディレクトリを解析させるか？を指定する
+    paths:
+        - app
+        - bootstrap
+        - config
+        - database
+        - resources/views
+        - routes
+        - tests
+    # 解析レベルを指定する
+    level: 5
